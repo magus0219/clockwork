@@ -1,0 +1,26 @@
+.DS_Store
+.idea
+logs
+.project
+.pydevproject
+.settings/
+.svn/
+
+# test
+coverage
+
+# python
+development.py
+__pycache__
+*.py[cod]
+*.pyc
+
+# js
+npm-debug.log
+node_modules
+
+dump.rdb
+
+# sublime-project
+tale.sublime-project
+tale.sublime-workspace
