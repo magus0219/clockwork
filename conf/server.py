@@ -22,7 +22,7 @@ SERVER_CONFIG = {
             'HOST':'0.0.0.0',
             'PORT':3993,
             # Log dir
-            'DIR':'../logs'  # Absolute path
+            'DIR':'./logs'  # relative path
             
             
             }   
@@ -70,7 +70,7 @@ LOGGING = {
             'level':'DEBUG',
             'class':'logging.handlers.TimedRotatingFileHandler',
             'formatter': 'verbose',
-            'filename':SERVER_CONFIG[ENVION]['DIR'] + os.sep + "server.log",
+            'filename': SERVER_CONFIG[ENVION]['DIR'] + os.sep + "server.log",
             'when':'midnight'
         },
                 },
