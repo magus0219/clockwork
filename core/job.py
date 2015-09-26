@@ -182,7 +182,7 @@ class Job(object):
                 if count2 :
                     for jobid_depend, deltaday, deltahour, deltaminute in rst2:
                         depend[jobid_depend] = [deltaday, deltahour, deltaminute]
-                    jobs.append(Job(recordid, timepattern, sshhost, command, retry, depend, jobtype))
+                jobs.append(Job(recordid, timepattern, sshhost, command, retry, depend, jobtype))
         return jobs
 
     @staticmethod
