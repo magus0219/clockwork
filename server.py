@@ -20,6 +20,7 @@ import threading
 
 from core.jobmanager import JobManager
 from core.socketserver import SocketServer
+# from core.command import Command
 
 logging.config.dictConfig(_logging_conf)
 logger = logging.getLogger("Server")
