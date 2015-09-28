@@ -193,7 +193,7 @@ class Job(object):
         conn = get_conn()
 
         sql = '''select recordid,timepattern,sshhost,command,retry,type from CW_JOB where
-                    enableflag = 1 and recordid=%d''' % (jobid)
+                    recordid=%d''' % (jobid)
         count, rst = conn.select(sql)
         if count == 1:
             recordid, timepattern, sshhost, command, retry, jobtype = rst[0]
